@@ -1,0 +1,12 @@
+{
+  "name": "Aws-Email-sender",
+  "version": "1.0.0",
+  "description": "AWS Lambda for forwarding a contact form using SES.",
+  "main": "index.mjs",
+  "repository": "https://github.com/Olwiba/Aws-Email-sender.git",
+  "author": "Olwiba <olwiba@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1589.0"
+  }
+}
