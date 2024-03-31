@@ -6,6 +6,7 @@
   "repository": "https://github.com/Olwiba/Aws-Email-sender.git",
   "author": "Olwiba <olwiba@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "aws-sdk": "^2.1589.0"
   }

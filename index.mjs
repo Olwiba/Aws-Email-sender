@@ -1,7 +1,7 @@
 import AWS from 'aws-sdk';
 const SES = new AWS.SES({ region: 'ap-southeast-2' }); // Sydney
 
-exports.handler = async (event) => {
+export async function handler(event) {
     const { firstName, lastName, company, email, message } = JSON.parse(event.body);
 
     const emailBody = `Name: ${firstName} ${lastName}\nCompany: ${company}\nEmail: ${email}\nMessage: ${message}`;
@@ -32,4 +32,4 @@ exports.handler = async (event) => {
             body: JSON.stringify({ error: 'Failed to send email' }),
         };
     }
-};
+}
